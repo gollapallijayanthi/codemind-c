@@ -1,25 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int n,m,k,a,b,c,t;
+    int t,i;
     scanf("%d",&t);
-    scanf("%d %d %d",&n,&m,&k);
+    for(i=1; i<=t; i++)
+    {
+        int n,m,k;
+        scanf("%d %d %d",&n,&m,&k);
     
-    scanf("%d %d %d",&a,&b,&c);
-  int capacity=m-k;
-    int cap=b-c;
-    int result=capacity-n;
-  int  res=cap-a;
-{
-    if(result>0) printf("YES
+     if(n+k<=m)  printf("YES
 ");
-    else    printf("NO
+     else  printf("NO
 ");
-    
-}
-    
-    { 
-        if(res>0) printf("YES");
-    else    printf("NO");
     }
+    
 }
