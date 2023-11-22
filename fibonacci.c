@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int i,n,f=0,s=1,t;
+    scanf("%d",&n);
+    for(i=0; i<n; i++)
+    {
+        if(i<=1) t=i;
+        else
+        {
+            t=f+s;
+            f=s;
+            s=t;
+        }
+       
+        printf("%d ",t);
+    }
+}
