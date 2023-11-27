@@ -2,14 +2,15 @@
 
 int main()
 {
-    int i,n;
+    int i=1,n;
     float sum=0.0;
     scanf("%d",&n);
      
       
-      for(i=1; i<=n; i++)
+      while(i<=n)
      {
         sum=sum+1.0/i;
+        i++;
      }
    printf("%0.2f",sum);
 }
